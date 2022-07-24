@@ -1,0 +1,580 @@
+/*Reset*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+/*--------------------*/
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+/*-------------Header--------------*/
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 11%;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+}
+
+.header__logo img {
+  width: 100%;
+  height: auto;
+}
+
+.header__nav a {
+  text-transform: uppercase;
+  margin-left: 20px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #363636;
+
+  transition: all 0.1s linear;
+}
+
+.header__nav a:hover {
+  color: #0078aa;
+}
+
+/*-------------Up button--------------*/
+.upButton {
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background-color: #0078aa;
+  border-radius: 50%;
+  font-size: 35px;
+
+  position: fixed;
+  bottom: 54px;
+  right: 20px;
+}
+
+/*-------------Medical--------------*/
+.medical {
+  background: url(./../img/lady.jpg) no-repeat center;
+  background-size: cover;
+
+  height: 565px;
+  padding: 0 55% 0 11%;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.medical h1 {
+  font-size: 25px;
+  font-weight: 700;
+  color: #000;
+  line-height: 1.3;
+  margin-bottom: 20px;
+}
+.medical p {
+  font-size: 12px;
+  font-weight: 400;
+  color: #7c7c7c;
+}
+
+.medical__items {
+  display: flex;
+  margin-top: 20px;
+}
+
+.medical__items a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+  border-radius: 50%;
+
+  background-color: #0078aa;
+  border: 2px solid #0078aa;
+
+  transition: all 0.1s linear;
+}
+
+.medical__items a:hover {
+  background-color: #fff;
+}
+
+.medical__items a:hover .medical__icon {
+  fill: #0078aa;
+}
+
+.medical__icon {
+  display: block;
+  height: 25px;
+
+  fill: #fff;
+
+  transition: all 0.1s linear;
+}
+
+/*-------------About Clinic--------------*/
+.aboutClinic {
+  display: flex;
+}
+.aboutClinic__img {
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.aboutClinic__img img {
+  max-width: 100%;
+  height: auto;
+}
+.aboutClinic__text {
+  width: 50%;
+  margin: 135px 0 135px 20px;
+}
+.aboutClinic__title {
+  font-size: 25px;
+  font-weight: 700;
+}
+.aboutClinic__subtitle {
+  font-size: 11px;
+  text-transform: uppercase;
+  color: #0078aa;
+  font-weight: 500;
+  margin-top: 13px;
+}
+
+.aboutClinic__item {
+  margin-top: 20px;
+}
+
+.aboutClinic__item h3 {
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.aboutClinic__item h3 span {
+  color: #0078aa;
+  padding-right: 4px;
+}
+
+.aboutClinic__item p {
+  font-size: 12px;
+  font-weight: 400;
+  max-width: 390px;
+  margin-top: 6px;
+  padding-right: 5px;
+}
+
+/*-------------Help--------------*/
+.help {
+  background: url(./../img/services_bg.jpg) no-repeat top;
+  background-size: cover;
+  text-align: center;
+  padding: 65px 11.5% 30px;
+}
+.help__title {
+  font-size: 25px;
+  font-weight: 700;
+}
+.help__subtitle {
+  font-size: 11px;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin: 13px 0 20px;
+}
+.help__items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.help__item {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  background-color: #fff;
+  margin-bottom: 30px;
+}
+
+.help__img {
+  max-width: 100%;
+  width: 100px;
+  height: auto;
+  margin: 30px 25px 0;
+}
+
+.help__item h3 {
+  font-size: 13px;
+  font-weight: 700;
+  margin: 20px 25px 15px;
+}
+
+.help__item p {
+  font-size: 12px;
+  margin: 0 25px 25px;
+}
+
+/*-------------Offers--------------*/
+.offers {
+  background: url(./../img/pricing_bg.jpg) no-repeat center;
+  background-size: cover;
+  padding: 0 11.5%;
+  min-height: 720px;
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 80px;
+}
+
+.offers__title {
+  font-size: 25px;
+  font-weight: 700;
+}
+.offers__subtitle {
+  font-size: 11px;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin: 13px 0 0;
+}
+
+.offers__items {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+}
+.offers__item {
+  width: 33.33333%;
+  text-align: center;
+  background-color: #47c9e5;
+  padding: 30px 0 30px;
+}
+
+.offers__name {
+  font-size: 18px;
+  font-weight: 700;
+}
+.offers__prize {
+  font-size: 45px;
+  font-weight: 700;
+  margin: 20px 0;
+}
+.offers__number {
+  font-size: 13px;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+.offers__include {
+  font-size: 11px;
+  padding: 15px 0;
+}
+.offers__notinclude {
+  font-size: 25px;
+}
+.offers__btn {
+  font-size: 13px;
+  font-weight: 700;
+  color: #0078aa;
+  background-color: #fff;
+  border: 2px solid #0078aa;
+  border-radius: 10px;
+  padding: 12px 20px;
+  margin-top: 15px;
+
+  transition: all 0.2s linear;
+}
+
+.offers__btn:hover {
+  background-color: #0078aa;
+  color: #fff;
+}
+
+.offers__item.offers__item-selected {
+  color: #0078aa;
+  background-color: #fff;
+  border: 2px solid #0078aa;
+  padding-top: 80px;
+  padding-bottom: 60px;
+}
+
+/*-------------Appoint--------------*/
+.appoint {
+  display: flex;
+}
+.appoint__img {
+  width: 50%;
+  display: flex;
+  background: url(./../img/contact_image.jpg) no-repeat center;
+  background-position: left;
+  background-size: cover;
+}
+
+.appoint__text {
+  width: 50%;
+  margin: 50px 25px 0 30px;
+}
+.appoint__title {
+  font-size: 25px;
+  font-weight: 700;
+}
+.appoint__subtitle {
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-top: 13px;
+  margin-bottom: 40px;
+}
+
+.appoint__form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.appoint__input {
+  width: 100%;
+  font-weight: 500;
+  line-height: 2;
+  border-bottom: 2px solid #eeeeee;
+  padding-left: 10px;
+  padding-right: 20px;
+  margin-bottom: 25px;
+}
+
+.appoint__input::placeholder {
+  font-style: italic;
+  font-size: 13px;
+  color: #616161;
+}
+
+.appoint__subject {
+  margin-bottom: 15px;
+}
+
+.appoint__btn {
+  font-size: 13px;
+  font-weight: 700;
+  color: #fff;
+  background-color: #0078aa;
+  border: 1px solid #0078aa;
+  border-radius: 10px;
+  padding: 12px 20px;
+  margin-bottom: 120px;
+
+  transition: all 0.2s linear;
+}
+
+.appoint__btn:hover {
+  background-color: #fff;
+  color: #0078aa;
+}
+
+/*-------------Footer--------------*/
+
+.footer {
+  text-align: center;
+  color: #fff;
+  background-color: #363636;
+  padding: 20px;
+}
+
+/*-------------Media query--------------*/
+
+@media (max-width: 1280px) {
+  .header {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .medical {
+    padding-left: 15px;
+    padding-right: 51%;
+  }
+
+  .help {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .offers {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .appoint__btn {
+    margin-bottom: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+  }
+
+  .header__logo {
+    margin-bottom: 10px;
+  }
+
+  .medical {
+    height: 300px;
+    padding-left: 15px;
+    padding-right: 15px;
+    align-items: center;
+    justify-content: end;
+    text-align: center;
+  }
+
+  .medical p {
+    padding: 0 25px;
+  }
+  .medical__items {
+    padding-bottom: 20px;
+  }
+
+  .aboutClinic {
+    flex-direction: column;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .aboutClinic__img {
+    width: 100%;
+  }
+
+  .aboutClinic__text {
+    width: 100%;
+    text-align: center;
+    margin: 15px 0;
+  }
+
+  .aboutClinic__item p {
+    max-width: none;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  .help {
+    padding-top: 30px;
+    padding-bottom: 0;
+  }
+
+  .help__item {
+    width: 100%;
+  }
+
+  .offers {
+    margin-top: 40px;
+  }
+
+  .offers__items {
+    margin-top: 20px;
+    flex-wrap: wrap;
+  }
+
+  .offers__item {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .appoint {
+    flex-wrap: wrap;
+  }
+
+  .appoint__img {
+    width: 100%;
+    min-height: 350px;
+  }
+
+  .appoint__text {
+    width: 100%;
+  }
+
+  .appoint__btn {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
